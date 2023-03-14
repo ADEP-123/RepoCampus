@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         body{
+            background-color: rgb(200, 176, 223);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .grid-layout{
+            height: 700px;
+            display: grid;
+            grid-template-areas: "holi como como" "estas como como" "estas ja je" "estas ji jo " "ju ju ju";/*de manera horizontal cuenta las filas y vertical las columnas holi=columna 1, como=fila/*
+            /*acomodar el ancho del menu y del aside*/
+            grid-template-rows: 33.3% 33.3% 33.3% 33.3% 33.3%;
+            /*Acomodar el ancho del main*/
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            padding: 10px
+
+        }
+
+        [class*="caja"]{
+            border: 1px solid rgb(252, 0, 147);
+            background-color: rgb(93, 0, 129);
+            text-align: center;
+            padding: 20px;}
+        .caja1{
+            grid-area: holi;
+            background-color: rgb(136, 61, 151);
+        }
+        .caja2{
+            grid-area: como;
+            background-color: rgb(50, 25, 61);
+        }
+        .caja3{
+            grid-area: estas;
+            background-color: rgb(120, 36, 122);
+        }
+        .caja8{
+            grid-area: ju;
+            background-color: rgb(63, 10, 94);
+        
+        }
+        
+        
+
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid-layout">
+        <div class="caja1">1</div>
+        <div class="caja2">2</div>
+        <div class="caja3">3</div>
+        <div class="caja4">4</div>
+        <div class="caja5">5</div>
+        <div class="caja6">6</div>
+        <div class="caja7">7</div>
+        <div class="caja8">8</div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+/* Asi se hacen comentarios :3, si en cada lenguaje es diferente porque las personas no pueden ser medianamente coherentes y ponerse de acuerdo
+
+Referenciando con palabra clave
+*/
+h1{
+    color: #642a09; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 350%;
+}
+
+body{
+    background-color: #ffe4c4;
+    background-image: url(../img/background2.jpg);
+}
+p{
+    color:#05002b; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* cuando es con class */
+.otroparrafo{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Forma de tipo ID (referencia a una sola etiqueta en particular) */
+#numero{
+    font-size: xx-large;
+    border: 1px solid #ff0000;
+    color: #8400ff;
+}
+/*llegar a travez de la ruta*/
+body>div>div>img {
+    border: 16px dotted #c59f07;
+    width: 15%;
+}

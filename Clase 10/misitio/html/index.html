@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icon/gato-negro.png" type="image/x-icon">
+    <title>My site</title>
+</head>
+<body>
+    <!--Comentario que el usuario no ve-->
+
+    <!--Etiquetas de formato de texto-->
+    <h2 id="menu">Menu</h2>
+    <ol type="I">
+        <li>
+            <a href="#titulos">Titulos</a>
+        </li>
+        <li>
+            <a href="#parrafos">Párrafos</a>
+        </li>
+        <li>
+            <a href="#listas_ordenadas">Listas ordenadas</a>
+        </li>
+        <li>
+            <a href="#listas_no_ord">Listas no ordenadas</a>
+        </li>
+        <li>
+            <a href="#vinculos">Vinculos</a>
+        </li>
+        <li>
+            <a href="#tablas">Tablas</a>
+        </li>
+        <li>
+            <a href="#formularios">Formularios</a>
+        </li>
+    </ol>
+
+    <a name="titulos"></a>
+    <h1>Titulo con h1</h1>
+    <h2>Titulo con h2</h2>
+    <h3>Titulo con h3</h3>
+    <h4>Titulo con h4</h4>
+    <h5>Titulo con h5</h5>
+    <h6>Titulo con h6</h6>
+
+    <h3 id="parrafos">Parrafos</h1>
+    <p>Texto en parrafos con p</p>
+
+    <p>siguiente parrafo <br> cambio de linea con br</p>
+
+    <pre>pre permite mostrar texto
+                    con la estructura que le coloque</pre>
+
+    <p><b>Parrafo en negrita 1 b</b></p>
+    <p><strong>Parrafo en negrita 2 strong</strong></p>
+    
+    <p>Texto <big>grande</big> con etiqueta big</p>
+
+    <p>Texto <i>en cursiva</i> con i</p>
+
+    <p>Texto en subindice Log<sub>2</sub><i>x</i> con etiqueta sub</p>
+    <p>Texto en superindice x<sup>2</sup> con etiqueta sup</p>
+
+    <p>Texto <ins>subrayado</ins> con etiqueta ins</p>
+
+    <p>Texto <s>tachado</s> con etiqueta s</p>
+    
+    <!--darle caracteristicas a un formato-->
+    <h1 align="center">Titulo 1 centrado</h1><!--Align sirve para ubicar el elemento o a la izquierda o a la derecha o en el centro-->
+    <h1 align="right">Titulo 1 a la derecha</h1>
+    <h1 align="left">Titulo 1 a la izquierda</h1>
+    <hr width="50%" align="right"> <!--width sirve para limitar por porcentaje su extension-->
+    <hr width="50%" align="left">
+
+
+
+    <!-----------Listas----------->
+    <h2>Listas</h2>
+    <!--Listas Ordenadas-->
+    <h3 align="left" id="listas_ordenadas">Listas ordenadas</h3>
+
+    <h4><i>Lista ordenada por defecto</i></h4>
+    <ol>
+        <li>Item ordenado 1</li>
+        <li>Item ordenado 2</li>
+        <li>Item ordenado 3</li>
+    </ol>
+
+    <h4><i>Formato type "a"</i></h4>
+    <ol type="a"> <!--Es como se enumera la lista-->
+        <li>Item ordenado 1</li>
+        <li>Item ordenado 2</li>
+        <li>Item ordenado 3</li>
+    </ol>
+
+    <h4><i>Formato type "A"</i></h4>
+    <ol type="A">
+        <li>Item ordenado 1</li>
+        <li>Item ordenado 2</li>
+        <li>Item ordenado 3</li>
+    </ol>
+
+    <h4><i>Formato type "i"</i></h4>
+    <ol type="i">
+        <li>Item ordenado 1</li>
+        <li>Item ordenado 2</li>
+        <li>Item ordenado 3</li>
+    </ol>
+
+    <h4><i>Formato type "I"</i></h4>
+    <ol type="I">
+        <li>Item ordenado 1</li>
+        <li>Item ordenado 2</li>
+        <li>Item ordenado 3</li>
+    </ol>
+
+    <h4><i>Formato type "I" start "3"</i></h4>
+    <ol type="I" start="3">
+        <li>Item ordenado 1</li>
+        <li>Item ordenado 2</li>
+        <li>Item ordenado 3</li>
+    </ol>
+
+
+    <!--Listas no ordenadas-->
+    <h3 align="left" id="listas_no_ord">Listas NO ordenadas</h3>
+    <ul> <!--UnOrden-->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+
+    <ul type="circle"> <!--type permite cambiar el simbolo que enlista-->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+
+    <ul type="square"> <!--type permite cambiar el simbolo que enlista-->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+
+    <ul type="disc"> <!--type permite cambiar el simbolo que enlista-->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+    <!--Visitar vinculos-->
+    <h3 align="left" id="vinculos">VISITAR VINCULOS</h3>
+
+    <h4><i>VINCULOS EXTERNOS</i></h4>
+    <p>Visitar sitio Web del consorcio de internet.
+        <br>
+        <a href="https://www.w3.org">Ir.</a> Para arbir en la misma pagina
+        <br>
+        <a href="https://www.w3.org" target="_blank">Ir.</a> Para abrir en otra pagina
+    </p>
+
+    <h4><i>VINCULOS INTERNOS</i></h4>
+    <p>Visitar la pagina hola mundo
+        <br>
+        <a href="holamundo.html">Ir.</a> Para arbir en la misma pagina
+        <br>
+        <a href="holamundo.html" target="_blank">Ir.</a> Para abrir en otra pagina
+    </p>
+
+    <h4 id="tablas"><i>TABLAS EN HTML</i></h4>
+    <!--tr es para crear una fila, para las celdas de encabezado se hace con la etiqueta th, las otras celdas las hace con etiqueta td-->
+    <table border="2" width="60%" align="center">
+            <tr>
+                <th width="15%">ID</th>
+                <th>NOMBRE</th>
+                <th>APELLIDO</th>
+                <th>CIUDAD</th>
+                <th width="20%">IMAGEN</th>
+            </tr>
+            <tr>
+                <td align="center">123</td>
+                <td>Andres</td>
+                <td>Elizalde</td>
+                <td>Bucaramanga</td>
+                <td align="center"><img src="../img/hombre-sindormir.jpg" alt="Desarrollador" width="100%"></td>                
+            </tr>
+            <tr>
+                <td align="center">456</td>
+                <td>Santiango</td>
+                <td>Pabon</td>
+                <td>Bucaramanga</td>
+                <td align="center"><img src="../img/muchacho-niño-tonto-de-la-cara-209344.jpg" alt="Desarrollador" width="100%"></td>
+            </tr>
+            <tr>
+                <td align="center">789</td>
+                <td>Owen</td>
+                <td>Polanco</td>
+                <td>Piedecuesta</td>
+                <td align="center"><img src="../img/owen.jpeg" alt="Desarrollador" width="100%"></td>
+            </tr>
+            <!--Combinar celdas-->
+            <tr>
+                <td align="center">123</td>
+                <td colspan="2" align="center">Andres</td>
+                <!-- <td>Elizalde</td> -->
+                <td>Bucaramanga</td>
+                <td align="center"><img src="../img/hombre-sindormir.jpg" alt="Desarrollador" width="100%"></td>                 
+            </tr>
+            <tr>
+                <td align="center">456</td>
+                <td>Santiango</td>
+                <td rowspan="2">Pabon</td>
+                <td>Bucaramanga</td>
+                <td align="center"><img src="../img/muchacho-niño-tonto-de-la-cara-209344.jpg" alt="Desarrollador" width="100%"></td>
+            </tr>
+            <tr>
+                <td align="center">789</td>
+                <td>Gustavo</td>
+                <!-- <td>Polanco</td> -->
+                <td><a href="https://www.google.com/maps?channel=fs&client=ubuntu&q=cienaga+de+oro&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjorNy69Jr9AhUhRjABHYZlAuQQ_AUoAXoECAEQAw"target="_blank">Cienaga de Oro</a></td>
+                <td align="center"><img src="../img/petrosky.jpeg" alt="Desarrollador" width="100%"></td>
+            </tr>
+
+    </table>
+
+        <!----FORMULARIOS---->
+        <h4 id="formularios"><i>Formularios en HTML</i></h4>
+        
+        <!--Formulario de texto-->
+        <form method="post"><!--Get la info viaja por la url, post viaja la info por el cuerpo de la pagina-->
+            <table border="2">
+                <tr>
+                <td>
+                    <label for="txtusuario">Usuario:</label>
+                </td>
+                <td colspan="2" align="center">
+                    <input type="text" name="txtusuario" id="txtusuario">
+                </td>
+                </tr>
+
+                <tr>
+                <td>
+                    <label for="passcontraseña">Contraseña:</label>
+                </td>
+                <td colspan="2" align="center">
+                    <input type="password" name="passcontraseña"  id="passcontraseña">
+                </td>
+                </tr>
+            <!--Para crear opciones a sleccionar-->
+                <tr>
+                    <td colspan="3">Elija el nivel de programacion que tiene:</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="radio" name="rdnivelprog" id="nivelBasi">
+                        <label for="nivelBasi">Básico</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="rdnivelprog" id="nivelInter">
+                        <label for="nivelInter">Intermedio</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="rdnivelprog" id="nivelAv">
+                        <label for="nivelAv">Avanzado</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                        Elija el lenguaje de programacion que domina:
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" name="lengprog" id="python" value="python">
+                        <label for="python">Python</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="lengprog" id="java" value="java">
+                        <label for="java">Java</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="lengprog" id="Go" value="Go">
+                        <label for="Go">Go</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" align="center">
+                        <input type="submit" value="Enviar">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    <p>
+        <a href="#menu">Ir al menu</a>
+    </p>
+</body>
+</html>

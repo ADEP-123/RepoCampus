@@ -1,0 +1,64 @@
+body{
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    background-repeat: no-repeat;
+
+    
+}
+h1{
+    font-size: 300%;
+    float: left;
+    width: 80%;
+}
+h1,h2, h3,h4{
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3{
+    text-decoration: underline rgb(71, 28, 1);
+}
+h4{
+    font-style: italic;
+}
+#infocontacto{
+    background: #C9CCD3;
+    background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: lighten;
+    text-align: center;
+    margin: auto;
+}
+table,td,tr{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+#atajos{
+    background-color: rgb(255, 255, 255,0.15);
+    border-radius: 20px;
+    padding: 2px;
+    margin: 0px;
+}
+nav>a{
+    color: rgb(245, 241, 241);
+}
+#panelizq{
+    float: left;
+    width: 29.57%;
+    height: 1850px;
+    margin: 0px;
+
+}
+#panelderech{
+    float: right;
+    width: 68%;
+    border-left: 1px solid black;
+    padding: 10px;
+    margin: 0px;
+    height: 1850px;
+}
+#footer{
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+#habilidades{
+    border: 0px solid black;
+}

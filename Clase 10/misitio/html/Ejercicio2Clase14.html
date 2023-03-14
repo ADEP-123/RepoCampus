@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de prueba de HTML5.</title>
+    <link rel="shortcut icon" href="../icon/mesa.png" type="image/x-icon">
+</head>
+
+<body>
+    <form method="post">
+        <table border="1">
+            <tr>
+                <th align="center" colspan="3">
+                    <label for="txtusuario">Cuestionario</label>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtusuario">Nombre:</label>
+                </td>
+                <td colspan="2" align="center">
+                    <input type="text" name="txtusuario" id="txtusuario" autofocus required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="correo">Correo Electronico:</label>
+                </td>
+                <td colspan="2" align="center">
+                    <input type="email" name="correo" id="correo" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="url">URL: </label>
+                </td>
+                <td colspan="2" align="center">
+                    <input type="url" name="url" id="url" placeholder="Escribe el URL de tu pagina web personal">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="fecha">Fecha: </label>
+                </td>
+                <td colspan="2" align="center">
+                    <input type="date" name="fecha" id="fecha">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="tiempo">Tiempo: </label>
+                </td>
+                <td colspan="2" align="center">
+                    <input type="time" name="tiempo" id="tiempo">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="fechor">Fecha y Hora: </label>
+                </td>
+                <td colspan="2" align="center">
+                    <input type="datetime-local" name="fechor" id="fechor">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="mes">Mes: </label>
+                </td>
+                <td colspan="2" align="center">
+                    <select name="meses" id="meses">
+                        <option value="nomes"></option>
+                        <option value="mes1">Enero</option>
+                        <option value="mes2">Febrero</option>
+                        <option value="mes3">Marzo</option>
+                        <option value="mes4">Abril</option>
+                        <option value="mes5">Mayo</option>
+                        <option value="mes6">Junio</option>
+                        <option value="mes7">Julio</option>
+                        <option value="mes8">Agosto</option>
+                        <option value="mes9">Septiembre</option>
+                        <option value="mes10">Octubre</option>
+                        <option value="mes11">Noviembre</option>
+                        <option value="mes12">Diciembre</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="semana">Semana: </label>
+                </td>
+                <td colspan="2" align="center">
+                    <select name="semana" id="semana">
+                        <option value="nodia"></option>
+                        <option value="dia1">Lunes</option>
+                        <option value="dia2">Martes</option>
+                        <option value="dia3">Miercoles</option>
+                        <option value="dia4">Jueves</option>
+                        <option value="dia5">Viernes</option>
+                        <option value="dia6">Sabado</option>
+                        <option value="dia7">Domingo</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="numero">Numero (min -10 max 10): </label>
+                </td>
+                <td colspan="2" align="center">
+                    <input type="number" name="numero" id="numero" min="-10" max="10" value="0">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="telefono">Telefono: </label>
+                </td>
+                <td colspan="2" align="center">
+                    <input type="tel" name="telefono" id="telefono">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="termino">Termino de búsqueda: </label>
+                </td>
+                <td colspan="2" align="center">
+                    <input type="search" name="termino" id="termino">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="color">Color favorito: </label>
+                </td>
+                <td colspan="2" align="center">
+                    <input type="color" name="color" id="color">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3" align="center">
+                    <input type="submit" value="Enviar">
+                </td>
+            </tr>  
+        </table>
+    </form>
+
+</body>
+</html>

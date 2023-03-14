@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto ;/*cada uno es la dimension de la columna*/
+            /* grid-template-rows: 25% 50% 25%; */
+            gap: 10px;
+            padding: 10px;
+            background-color: rgb(229, 200, 255);
+            height: 600px;
+            
+            /*justify-content: right;/*lo moverá a donde se pida*/
+            /*justify-content: space-evenly;/*deja un espacio intermedio de la celda alrededor de ellas entre ellas y uniforme e igual*/
+            /*justify-content: space-around; el espacio entre celdas*/
+            /*justify-content: space-between; /*da a las columnas la misma cantidad de espacio entre ellas*/
+            /*Propiedad Align-content afecta a las filas */
+            /*align-content: center;*/
+            /*align-content: start ; /*espaciado entre las filas*/
+            /*align-content: end; /*alinea al final del contenedor*/
+        }
+        .grid-container > div{
+                background-color: blueviolet;
+                text-align: center;
+               
+            }
+            .grid-item8{
+                grid-area: 1/2/5/6;/*fila-columa*/
+            }
+            
+  </style>
+  
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item1">1</div>
+        <div class="grid-item2">2</div> 
+        <div class="grid-item3">3</div>
+        <div class="grid-item4">4</div>
+        <div class="grid-item5">5</div>
+        <div class="grid-item6">6</div>
+        <div class="grid-item7">7</div>
+        <div class="grid-item8">8</div>
+        <div class="grid-item9">9</div>
+        <div class="grid-item10">10</div>
+        <div class="grid-item11">11</div> 
+        <div class="grid-item12">12</div>
+        <div class="grid-item13">13</div>
+        <div class="grid-item14">14</div>
+        <div class="grid-item15">15</div>
+    </div>
+    
+</body>
+</html>

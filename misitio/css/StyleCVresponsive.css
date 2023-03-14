@@ -1,0 +1,163 @@
+body{
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    background-repeat: no-repeat;
+
+    
+}
+h1{
+    font-size: 300%;
+    float: left;
+    width: 80%;
+}
+h1,h2, h3,h4{
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3{
+    text-decoration: underline rgb(71, 28, 1);
+}
+h4{
+    font-style: italic;
+}
+#foto{
+    width: 7%;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+#menuinicio{
+    height: 20%;
+}
+header,footer{
+    height: 10%;
+}
+#cuerpo{
+    height: 60%;
+}
+#infocontacto{
+    background: #C9CCD3;
+    background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: lighten;
+    text-align: center;
+    margin: auto;
+    width: 40%;
+}
+table,td,tr{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+#atajos{
+    background-color: rgb(255, 255, 255,0.15);
+    border-radius: 20px;
+    padding: 2px;
+    margin: 0px;
+}
+nav>a{
+    color: rgb(245, 241, 241);
+}
+#panelizq{
+    float: left;
+    width: 29%;
+    margin: 0px;
+
+}
+#panelderech{
+    float: right;
+    width: 68%;
+    border-left: 1px solid black;
+    padding: 10px;
+    margin: 0px;
+}
+#footer{
+    float: right;
+    text-align: center;
+    width: 100%;
+}
+#habilidades{
+    border: 0px solid black;
+}
+#volvinicio{
+    display: none;
+}
+@media (max-width:879px){
+    #seccioninfocontacto{
+        width: 100%;
+    }
+
+    #infocontacto{
+        width: 60%;
+    }
+
+    #panelizq{
+        width: 29.57%;
+    }
+
+    #panelderech{
+        width: 67%;
+    }
+    
+    #foto{
+        width: 10%;
+
+    }
+    
+}
+@media (max-width:628px){
+    #seccioninfocontacto{
+        width: 100%;
+    }
+
+    #infocontacto{
+        width: 60%;
+    }
+
+    #panelizq{
+        width: 35%;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    #panelderech{
+        width: 59%;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .listizq{
+        margin-left: 0px;
+        padding-left: 15px;
+    }
+
+    #atajos{
+        text-align: center;
+    }
+
+    #foto{
+        width: 15%;
+    }
+
+    #volvinicio{
+        display: inline;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    #panelizq{
+        width: 25%;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    #panelderech{
+        width: 73%;
+        margin-right: 0px;
+        padding-right: 0px;
+        
+    }
+}

@@ -1,0 +1,53 @@
+body{
+    border: 1.5px solid rgb(255, 115, 0);
+    box-shadow: 5px 5px  rgb(105, 102, 102);
+}
+h1{
+    color: rgb(1, 126, 126);
+}
+strong{
+    color: red;
+}
+.destacado{
+    color: rgb(230, 188, 1);
+}
+h2{
+    color: blue;
+}
+p>a{
+    color: rgb(180, 0, 0);
+}
+p>a>em{
+    color: blue;
+}
+.especial{
+    color: purple;
+}
+table,td,th{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+table>caption{
+    color: rgb(0, 0, 117);
+}
+th.especial{
+    color: rgb(255, 187, 0);
+}
+td{
+    color: green;
+}
+td>strong{
+    color: rgb(255, 187, 0);
+}
+th{
+    color:  red;
+}
+#adicional{
+    color: rgb(124, 165, 11);
+}
+#especial{
+    color: rgb(161, 1, 161);
+}
+div>p>a{
+    color: rgb(20, 168, 149);
+}

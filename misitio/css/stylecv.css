@@ -1,0 +1,38 @@
+body{
+    background-image: url(https://img.elo7.com.br/product/main/1B4C005/papel-de-parede-fashion-paper-fe-1407-decorar.jpg);
+}
+.tabla{
+    background-color: rgb(255, 255, 255,0.3);
+}
+h1{
+    color: rgb(58, 24, 1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 450%;
+}
+h2{
+    color: rgb(65, 26, 1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3{
+    color: rgb(71, 28, 1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline rgb(71, 28, 1);
+}
+h4{
+    color: rgb(71, 28, 1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+p{
+    color: rgb(90, 35, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ul{
+    color: rgb(90, 35, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+td{
+    color: rgb(90, 35, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+

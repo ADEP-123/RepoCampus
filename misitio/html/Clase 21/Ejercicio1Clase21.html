@@ -1,0 +1,40 @@
+<!--Brake points: puntos donde la pagina empieza a cambiar hay de dos tipos:
+De Resolucion:
+    Básicos: los que  se pueden encontrar en moviles, tarjetas, en la web y per,iten hacer un diseño responsivo en general.
+        mov: 0-480px
+        tablet: 480px-960px
+        portatil: >960px
+    Completos: Permiten definir diferentes tipos de tamaños en cada una de sus basicos
+        disp pequ: 0-320px
+        celulares: 320px-480px
+        tablets: 480px-768px
+        tablets y portatiles pequeños: 768px-960px
+        portatiles grandes: 960px-1024px
+        pantallas grandes: >1024px
+    Personalizados: Crear un break-point en una resolucion en la que crea que no se ve la pagina y que no concuerda con los estandares.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <style>
+        body {
+            background-color: lightgreen;
+        }
+        @media (max-width:600px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <p>
+        Cambie el tamaño de la ventana del navegador. Cuando el ancho de este documento es de 600 pixeles o menos, el color de fondo es "azul claro", de lo contrario pasa a "verde claro"
+    </p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#caja1{
+    width: 100%;
+    background-color: rgb(0, 0, 139);
+    height: 100px;
+    color: white;
+}
+#caja2{
+    width: 50%;
+    background-color: rgb(48, 160, 252);
+    height: 200px;
+    float: left;
+}
+#caja3{
+    width: 50%;
+    background-color: lightgray;
+    height: 200px;
+    float: right;
+}
+#caja4{
+    width: 70%;
+    background-color: gray;
+    height: 400px;
+    float: left;
+}
+#caja5{
+    width: 30%;
+    background-color: lightsalmon;
+    height: 200px;
+    float: right;
+}
+#caja6{
+    width: 30%;
+    background-color: lightcoral;
+    height: 200px;
+    float: right;
+}

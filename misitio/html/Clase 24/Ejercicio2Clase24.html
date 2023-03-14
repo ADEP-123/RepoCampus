@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background: rgb(163,167,173);
+            background: linear-gradient(333deg, rgba(163,167,173,1) 25%, rgba(255,255,255,1) 100%);
+        }
+        main{
+            margin: 10%;
+            padding: 0px;
+
+            box-sizing: border-box;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;/*cada uno es la dimension de la columna*/
+            grid-template-rows: 33% 33% 33%;
+            padding: 10px;
+            height: 80%;
+            width: 80%;
+            gap: 1em;
+            
+        }
+        [Class*="grid-item"]{
+            background-color: rgb(24, 170, 214);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            color: white;
+        }
+        .grid-item1{
+            grid-column: 1/3;
+            grid-row: 1/3;
+            border-radius: 10%;
+            text-align: justify;
+        }
+        .grid-item2,.grid-item3,.grid-item4,.grid-item5,.grid-item6,.grid-item7,.grid-item8,.grid-item9{
+            border-radius: 100%;
+        }
+        .grid-item1,.grid-item4,.grid-item7,.grid-item9{
+            background-color: rgb(10, 34, 56);
+            border: 0px solid white;
+        }
+        .grid-item3,.grid-item5,.grid-item8{
+            background-color: rgb(204, 225, 243);
+            border: 0px solid white;
+        }
+        .grid-item2,.grid-item6{
+            background-color: rgb(214, 147, 4);
+            border: 0px;
+        }
+        div>img{
+            height: 80%;
+            width: 80%;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+    <div class="grid-container">
+        <div class="grid-item1">
+            <h1>Grid Layout IV</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus asperiores, sunt nesciunt sit vero voluptatibus labore beatae, expedita libero dicta error maxime eum quasi, dolore deleniti molestias id at alias?</p>
+        </div>
+        <div class="grid-item2"></div>
+        <div class="grid-item3"><img src="https://dsm01pap001files.storage.live.com/y4mkbSRgobumrTbL9KUexwCm6dI1l4zEagfGLf70nUUsoidLWgKyx_daOMKewfY3EM1fpExoIG8fHxRYAEbUmkowqcHY_yv7TakAEDL-V3zY3o2vbA9OimXx2A0rIOa_7lNTJa-aBEEyl4qXPCvVV1nTapp1qSC0eRdwNoPdsKhOEf_GZoqS8uRsMrwsvnA0lN50DoDjntjaveqPFnuR6XRHg?encodeFailures=1&width=512&height=512"></div>
+        <div class="grid-item4"><img src="https://dsm01pap001files.storage.live.com/y4mhjkYaOWnbE-bwVyt8CpigSzITIamj_XqoobkPkWHxkWuxB-7BpPQXSLQepq1C4SptfMuMx8oeFab7peD-8TlTxiFx-A_BDiCGwIfP19sghp5DHympQAcVRcfxhHIaoF7yFhLH9t0LH-wnztW2tOnOXygYMG93Urc87sJfvrpXIzqsC0zgShjhEAQMmmtyfTZ3xmg3pIVFtH08RmExhisYQ?encodeFailures=1&width=512&height=512"></div>
+        <div class="grid-item5"><img src="https://dsm01pap001files.storage.live.com/y4md1TXLEVVHyB-tKNBG67nFTdIpM2YQ7BuS5zjY_PvJzu2Z5kPmmSBa0b_AWc484H7o7YsnA278SIDo9s-QpZwk00yxSivCOrStCqQfR6fA1x_djhx4LkbyEVj6NDTZRxFEP-qiTMuNK3EwzmPUhtxO_-Jo5_H3qKXsQ6OYxl4HvGlPNXaa7ZMvtWuu4qFtO8qivlp3RveqzG2q2fOgfqN1Q?encodeFailures=1&width=512&height=512"></div>
+        <div class="grid-item6"><img src="https://dsm01pap001files.storage.live.com/y4mJzz8VIBH8Y0i70V-K5po8T_3nvroFXupD-bwB_xXGuzfS6Van_M7jl-flPWMfQY9l2N_ZgWf5EpfdkvBnRJlBkVmc1o4g_1pbKYK2rRRKgIZXYvv1siuT1ntjFV8ssi3Us1Uo6i9lIPjYb8SsxugojW1jW20cn48RHpIXzaXF9Hk4ae3MZkfNG6IegeZB_BRoMIJQQZv9mR43Zbsryw0uA?encodeFailures=1&width=512&height=512"></div>
+        <div class="grid-item7"></div>
+        <div class="grid-item8"><img src="https://dsm01pap001files.storage.live.com/y4mIa-HnLx7pEo0kTjrmRwztqaM_MB3aImgt5h7U2FnV-K_v7SGXiTS3xrPpLhv0Dt9ZSO9748tB8Ki9IpJsluLiOLb1hX05s55B6wGy5gfsL4GOxixCp2p2H-YQrHFP8wBfrsJmfZoH9XCzTOCvbADVaj_C0to4CSWZWp0VkS_WGdUty09RQzT_wsd4P-EM3iHL8Isim_puCRE2FlbffIVBw?encodeFailures=1&width=512&height=512"></div>
+        <div class="grid-item9"></div>
+    </div>
+    </main> 
+</body>
+</html>

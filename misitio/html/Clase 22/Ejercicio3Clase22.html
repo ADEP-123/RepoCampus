@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        input, textarea {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form action="/action_page.php">
+        Primer nombre:<br>
+        <input type="text" name="firstname" value="Mickey"><br>
+        Apellidoo: <br>
+        <input type="text" name="lastname" value="Mouse"><br>
+
+        Comentarios:<br>
+        <textarea name="message" cols="30" rows="5">
+        </textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>
+        <strong>Tip:</strong>Intente eliminar la propiedad de tamaño de cuadro del elemento de estilo y observe lo que sucede. tenga en cuenta que el ancho de la entrada, el area de texto y el botón de envío quedarán fuera de la pantalla
+    </p>
+</body>
+</html>
+<!--Define cómo se calculan el ancho y la altura de un elemento: si deben incluir relleno y bordes-->

@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+     body{
+            background-color: rgb(200, 176, 223);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .grid-layout{
+            height: 650px;
+            display: grid;
+            grid-template-areas: "cabecera cabecera " "menu menu " "contenido lateral" "footer footer";
+            /*acomodar el ancho del menu y del aside*/
+            grid-template-rows: 20% 10% auto 10%;
+            /*Acomodar el ancho del main*/
+            grid-template-columns: 80% auto;
+            background-color: rgb(219, 115, 141);
+            border: 1px solid rgb(126, 32, 32);
+        }
+        [class*="caja"]{
+            border: 1px solid rgb(255, 0, 0);
+            background-color: rgb(190, 30, 30);
+            text-align: center;
+            padding: 20px;
+        }
+        .caja1{
+            grid-area: cabecera;
+            background-color: rgb(160, 55, 77);
+        }
+        .caja2{
+            grid-area: menu;
+            background-color: rgb(83, 13, 28);
+        }
+        .caja3{
+            grid-area: contenido;
+            background-color: rgb(112, 30, 48);
+        }
+        .caja4{
+            grid-area: lateral;
+            background-color: rgb(100, 46, 33);
+        
+        }
+        .caja5{
+            grid-area: footer;
+            background-color: rgb(105, 36, 41);
+        }
+
+   </style>
+    <title>Document</title>
+</head>
+<body>
+  <div class="grid-layout">
+    <div class="caja1">header</div>
+    <div class="caja2">menu</div>
+    <div class="caja3">main</div>
+    <div class="caja4">aside </div>
+    <div class="caja5">Footer</div>
+    
+  </div>
+</html>

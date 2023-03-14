@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+
+        #bannerpresentacion{
+            background-color: rgb(78, 17, 17);
+            color: rgb(226, 226, 226);
+            height: 50px;
+            padding-top: 2px;
+            
+        }
+        #redes{
+            font-size: 1.5em;
+        }
+        .bi-person-circle{
+            font-size: 1.5em;
+            color: rgb(255, 196, 0);
+        }
+        #namepad{
+            padding-left: 80px;
+        }
+        #navbar, #footer{
+            background-color: rgb(255, 196, 0);
+            text-align: right;
+            text-indent: 10px;          
+        }
+        a:hover{
+            text-decoration: underline;
+            color: blue;
+            
+        }
+        a {
+            text-decoration: none;
+            color: rgb(78, 17, 17);
+            margin-left: 15px;
+            margin-right: 20px;
+            
+        }
+        #imgfondo{
+            z-index: -1;
+            display: ;
+        }
+        #menufs{
+            background-color: rgba(0, 0, 0, 0.418);
+            color: white;
+            text-align: justify;
+            margin-left: 20px;
+            width: 30%;
+            z-index: 1;
+            float: left;
+            
+        }
+        #promocion{
+            font-size: 4em;
+            text-align: center;
+            -webkit-text-stroke: 2px white;
+            color: black;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+        #articulos, #mapa{
+            margin-top: 25px;
+        }
+        #restaurantedentro{
+            margin-bottom: 50px;
+        }
+        #fincontent{
+            background-color: rgb(226, 226, 226);
+            padding: 5px;
+            color: rgb(78, 17, 17);
+        }
+        #footer{
+            color: rgb(78, 17, 17);
+            text-align: left;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="container-fluid">
+
+        <div class="row" id="bannerpresentacion">
+            <div class="col-10" id="namepad">
+                <i class="bi bi-person-circle"></i> fastfood
+            </div>
+            <div class="col-2" id="redes">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-instagram"></i>
+            </div>
+        </div>
+
+        <div class="row" id="navbar">
+            <div class="col-12">
+                <nav id="navbar"> 
+                    <a href="#Inicio">Inicio</a>
+                    <a href="">El restaurante</a>
+                    <a href="">La carta</a>
+                    <a href="">Dónde estamos</a>
+                    <a href="">Contacto y servicios</a>
+                </nav>
+            </div>
+        </div>
+
+    </div><!--Header-->
+
+    <div class="container">
+
+        
+        <div class="row" >
+            <div class="col-12" >
+                <div class="container-md">
+                    <div class="row">
+                        <div class="col">
+                            <div id="carouselExample" class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://www.clarin.com/img/2021/06/17/LC25eDtCT_1256x620__1.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="card" id="menufs" style="width: 18rem; margin-left: 5px; height: 38em"  >
+                                        <div class="card-body">
+                                            <h5 class="card-title">menú fin de semana</h5>
+                                            <p class="card-text" id="promocion"> 2x1 </p>
+                                            en todas las hamburguesas
+                                            <br>
+                                            <br>
+                                            Consulta esta y todas nuestras otras promociones en nuestro apartado de carta
+                                            </p>
+                                            <button>Ver carta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--Imagen fondo + promociones-->
+
+        <div class="row" >
+            <div class="col-6" id="articulos">
+                <div class="row">
+                    <div class="col-11">
+                        El restaurante <b>fastfood</b>
+                    </div>
+                    <div class="col-1">
+                        <i class="bi bi-brush"></i>
+                    </div>
+                </div><!-- header artiuclo-->
+                <div class="row">
+                    <div class="col-12">
+                        <p align="justify">
+                            <hr>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa porro ipsa quisquam architecto! Harum dolor sit tenetur quo cumque amet reiciendis aperiam molestiae, labore pariatur delectus nostrum itaque, alias quasi!
+                            <br><br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolores non voluptatem amet. Facilis et vitae voluptates eaque aut, asperiores consequatur consequuntur minima dolorem quidem officiis harum, numquam culpa repellat?
+                        </p>
+                    </div>
+                </div><!--contenido articulo-->
+            </div>  
+            <div class="col-6" id="mapa">
+                <div class="row">
+                    <div class="col-11">
+                        Donde encontrar <b>fastfood</b>
+                    </div>
+                    <div class="col-1">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                </div><!--header mapa-->
+                <hr>
+                    <div class="col-12" id="contenidomapa">
+                Estamos en la Calle de las lechugas, n° 24. Mallorca, España
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8451.481907977477!2d2.6436010026260277!3d39.568485470703564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297b8766606c129%3A0xb7eb9bff02d2ecc0!2sMallorca!5e0!3m2!1ses-419!2sco!4v1678155895314!5m2!1ses-419!2sco" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div><!--contenido mapa-->
+                
+            </div>  
+  
+        </div><!--Articulos + mapa-->
+
+        <div class="row" id="restaurantedentro">
+            <div class="row">
+                <div class="col-11">
+                    El restaurante <b>fastfood</b> por dentro
+                </div>
+                <div class="col-1">
+                    <i class="bi bi-camera"></i>
+                </div>
+            </div>
+            <div class="row">
+                    <hr>
+                    <div class="col-4">
+                        <img src="https://i.blogs.es/98c7c2/aspen-20la-20moraleja-20-23-/450_1000.jpg" width="100%">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://restauranteikigai.com/wp-content/uploads/2018/05/Restaurante_ikigai_7.jpg" width="100%">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://i0.wp.com/imaginariodejaneiro.com/wp-content/uploads/2014/08/DSC_0015.jpg?ssl=1" width="100%">
+                    </div>
+            </div>
+        </div><!--Restaurante por dentro-->
+
+        <div class="row" id="fincontent">
+            <div class="col-4">
+                <div class="row">
+                    <div class="col">
+                        Visita <b>fasfood</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <hr>
+                        Estamos abiertos de martes a domingo las 12h del mediodia hasta las 24h de la noche
+                        <br><br>
+                        Podrás encontrarnos en la calle de las lechugas numero 24, Mallorca, España.
+                        <br><br>
+                        Para reservas puedes consultar nuestro <b>apartado de contacto</b> o llamarnos al 612345678
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <div class="col">
+                        Ofertas recomendadas
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <b>
+                            <hr>
+                            Menú de fin de semana 2x1 en hamburguesas
+                            <br><br>
+                            Cena para parejas los martes
+                            <br><br>
+                            Menú "come hasta explortar"
+                            <br><br>
+                            La mega hamburguesa
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <div class="col">
+                        Siguenos en las redes sociales
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <b>
+                            <hr>
+                            Facebook
+                            <br><br>
+                            Twitter
+                            <br><br>
+                            Youtube
+                            <br><br>
+                            Instagram
+                        </b>
+                    </div>
+                </div>
+            </div>
+        </div><!--fincontent-->
+
+
+    </div><!--Content-->
+
+    <div class="container-fluid" id="footer">
+        <div class="row">
+            <div class="col-8">
+                fasfood 2016 - Todos los derechos reservados. sitio diseñado por XXXXXXX
+            </div>
+            <div class="col-4">
+                <nav>
+                    <a href="">Inicio</a>
+                    <a href="">Aviso legal</a>
+                    <a href="">Cookies</a>
+                    <a href="">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </div><!--Footer-->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

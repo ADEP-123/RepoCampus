@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let año = Number(prompt("Ingrese el año"));
+
+        while (año === 0){
+            let año = Number(prompt("El año debe ser diferente de 0"));
+        }
+
+        if (año%4 === 0){
+            if (año%100 === 0){
+                if (año%400 ===0 ){
+                    alert ("El año es bisiesto")
+                } else{
+                    alert("El año no es bisiesto")
+                }
+            } else{
+                alert("El año es bisiesto")
+            }
+        } else{
+            alert("El año no es bisiesto")
+        }
+    </script>
+</body>
+</html>

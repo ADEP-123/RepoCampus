@@ -13,21 +13,9 @@
     <div class="cotainer">
         <div class="row">
             <div class="col-12">
-                <table class="table table-bordered" >
-                    <tr>
-                        <th> Cedula </th>
-                        <th> Nombre </th>
-                        <th> Horas Trab. </th>
-                        <th> Valor Hora </th>
-                        <th> Sal Bruto </th>
-                        <th> Eps </th>
-                        <th> Pension </th>
-                        <th> Aux Trans </th>
-                        <th> Sal Neto </th>
-                    </tr>
-                    <tr id="aqui">
-                    </tr>
+                <table class="table table-bordered" id="aqui">
                 </table>
+            </div>
             </div>
         </div>
     </div>
@@ -35,9 +23,21 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script>
-        
+       
         let cedula = prompt("Ingrese la cedula del empleado,para finalizar digite 0: ");
         const salMin = 1160000
+        let datos = `<tr>
+            <th> Cedula </th>
+            <th> Nombre </th>
+            <th> Horas Trab. </th>
+            <th> Valor Hora </th>
+            <th> Sal Bruto </th>
+            <th> Eps </th>
+            <th> Pension </th>
+            <th> Aux Trans </th>
+            <th> Sal Neto </th>
+        </tr>
+        `;
 
         while (cedula != "0"){
             let nombre = "";
@@ -57,16 +57,17 @@
                 var auxtrans = 0;
             }
             let salNeto = salBruto + auxtrans - eps - pens; 
-            document.getElementById("aqui").innerHTML = `
-                            <td>${cedula}</td>
-                            <td>${nombre}</td>
-                            <td>${horasTrab}</td>
-                            <td>${salHora}</td>
-                            <td>${salBruto}</td>
-                            <td>${eps}</td>
-                            <td>${pens}</td>
-                            <td>${auxtrans}</td>
-                            <td>${salNeto}</td>`;
+            datos = datos +`<tr>
+                <td>${cedula}</td>
+                <td>${nombre}</td>
+                <td>${horasTrab}</td>
+                <td>$ ${salHora.toLocaleString("es")}</td>
+                <td>$ ${salBruto.toLocaleString("es")}</td>
+                <td>$ ${eps.toLocaleString("es")}</td>
+                <td>$ ${pens.toLocaleString("es")}</td>
+                <td>$ ${auxtrans.toLocaleString("es")}</td>
+                <td>$ ${salNeto.toLocaleString("es")}</td> </tr>`
+            document.getElementById("aqui").innerHTML = datos;
             cedula = prompt("Ingrese la siguiente cedula de empleado, para finalizar digite 0: ");
         }
     </script>

@@ -9,18 +9,132 @@
     <title>Valor menor</title>
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <table class="table table-dark table-sm">
+                    <thead id="aqui2">
+                        <tr>
+                            <th>Monto del credito :</th>
+                        </tr>
+                        <tr>
+                            <th>Tasa de interes (anual): </th>
+                        </tr>
+                        <tr>
+                            <th>Numero de pagos mensuales: </th>
+                        </tr>
+                        <tr>
+                            <th>Valor Total: </th>
+                        </tr>
+                        <tr>
+                            <th>Valor Mensual: </th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="col-8">
+                <table class="table table-dark table-sm">
+                    <thead>
+                        <tr>
+                            <th>MES</th>
+                            <th>VALOR</th>
+                            <th>VALOR TOTAL</th>
+                            <th>CAPITAL</th>
+                            <th>INTERES</th>
+                            <th>TOTAL</th>
+                        </tr>
+                    </thead>
+                    <tbody id="aqui">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <driv class="row">
+            <div class="col-12" style="text-align: center;">
+            <input type="button" value="Calcular tabla" onclick="montoDeposito();" class="btn btn-dark">
+            </div>
+        </driv>
+    </div>
+
+
 
 <!-- script funcion enteros impares -->
 <script>
-const montoCredito = Number(prompt(`Ingrese el monto del credito: `));
-const tasaInteres = Number(prompt(`Ingrese la tasa de interes anual: %`));
-const numeroPagos = Number(prompt(`Numero de pagos mensuales: `))
-let valTotal = montoCredito * (1+((tasaInteres/12)*numeroPagos)/100)
-let valMensual = valTotal / numeroPagos
-console.log(valTotal)
-console.log(valMensual) 
-a
 
+const buildFila1 = (mes, valor, valorTotal,capital, interes, total) => {
+        return `<tr>
+            <td>${mes}</td>
+            <td>$${valor.toLocaleString("es")}</td>
+            <td>$${valorTotal.toLocaleString("es")}</td>
+            <td>$${capital.toLocaleString("es")}</td>
+            <td>$${interes.toLocaleString("es")}</td>
+            <td>$${total.toLocaleString("es")}</td>
+        </tr>`;
+    }
+const buildFila2 = (sumCapital, sumInteres, sumTotal) => {
+    return `<tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>$${sumCapital.toLocaleString("es")}</td>
+            <td>$${sumInteres.toLocaleString("es")}</td>
+            <td>$${sumTotal.toLocaleString("es")}</td>
+        </tr>`
+}
+const buildFila3 = (montoCredito, tasaInteres, numeroPagos, valTotal, valMensual) => {
+    return `
+        <tr>
+            <th>Monto del credito :</th>
+            <td>$${montoCredito.toLocaleString("es")}</td>
+        </tr>
+        <tr>
+            <th>Tasa de interes (anual): </th>
+            <td>$${tasaInteres.toLocaleString("es")}</td>
+        </tr>
+        <tr>
+            <th>Numero de pagos mensuales: </th>
+            <td>$${numeroPagos.toLocaleString("es")}</td>
+        </tr>
+        <tr>
+            <th>Valor Total: </th>
+            <td>$${valTotal.toLocaleString("es")}</td>
+        </tr>
+        <tr>
+            <th>Valor Mensual: </th>
+            <td>$${valMensual.toLocaleString("es")}</td>
+        </tr>`
+}
+function montoDeposito () {
+    const montoCredito = Number(prompt(`Ingrese el monto del credito: `));
+    const tasaInteres = Number(prompt(`Ingrese la tasa de interes anual: %`));
+    const numeroPagos = Number(prompt(`Numero de pagos mensuales: `));
+
+    let valTotal = montoCredito * (1+((tasaInteres/12)*numeroPagos)/100);
+    let valMensual = valTotal / numeroPagos;
+    document.getElementById("aqui2").innerHTML = buildFila3(montoCredito,tasaInteres,numeroPagos,valTotal,valMensual);
+    let capital = montoCredito / numeroPagos;
+    let interes = valMensual-capital;
+
+    let sumadorTexto = ``;
+    let sumCapital = 0;
+    let sumInteres = 0;
+    let sumTotal = 0;
+
+    for (let i = 1 ; i <= numeroPagos ; i++) {
+        let mes = i;
+        let valor = montoCredito - (i-1)*capital;
+        let valorTotal = valTotal - (i-1)*valMensual;
+        let total = capital + interes
+        sumadorTexto += buildFila1(mes, valor, valorTotal, capital, interes, total);
+        sumCapital += capital;
+        sumInteres += interes;
+        sumTotal += capital + interes;
+    }
+
+    sumadorTexto += buildFila2(sumCapital, sumInteres, sumTotal);
+
+    document.getElementById("aqui").innerHTML = sumadorTexto;
+}
 
 
 </script>

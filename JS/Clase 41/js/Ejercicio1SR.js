@@ -1,3 +1,4 @@
+let totAnt = 0;
 function agregar1() {
   while (
     isNaN(document.getElementById("lunes").value) == true ||
@@ -28,8 +29,14 @@ function agregar1() {
   document.getElementById("viernes").value = "";
   document.getElementById("sabado").value = "";
 
+  if (totAnt > total) {
+    totAnt = total;
+  }
+
   let str = String(document.getElementById("info").innerHTML);
-  str += `<tr>
+  let str2 = "";
+  str =
+    `<tr>
 <td>${nombre1}</td>
 <td>${lunes1}</td>
 <td>${martes1}</td>
@@ -38,7 +45,7 @@ function agregar1() {
 <td>${viernes1}</td>
 <td>${sabado1}</td>
 <td>${total}</td>
-</tr>`;
+</tr>` + str;
   document.getElementById("info").innerHTML = str;
 }
 function limpiar1() {

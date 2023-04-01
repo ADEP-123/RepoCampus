@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo">HOLA K ACE</p>
+
+    <p id="demo2">Campers aprendiendo DOM :p</p>
+
+    <h2>JavaScript HTML DOM</h2>
+    <p>Encontrando un elemento por el nombre.</p>
+    <p>Este ejemplo demuesta el uso de <b>getElementsByTagName</b>.</p>
+    <p id="demo3"></p>
+
+    <h1>Equipos famosos</h1>
+    <ul class="list">
+      <li>Junior</li>
+      <li>Bucarmanga</li>
+      <li>Hiula</li>
+      <li>Cucuta</li>
+    </ul>
+
+    <script>
+      document.getElementById("demo").innerText = `<b>Campus Lands</b>`;
+
+      const parrafo = document.getElementById("demo2");
+      console.log(parrafo.textContent);
+
+      const element = document.getElementsByTagName("p");
+      document.getElementById("demo3").innerHTML =
+        `Primer párrafo (index 0):` + element[2].innerHTML;
+
+      const list = document.querySelector(".list");
+      console.log(list);
+
+      const lstElementos = document.querySelectorAll("ul > li");
+      lstElementos.forEach((elem) => {
+        console.log(elem);
+      });
+    </script>
+  </body>
+</html>

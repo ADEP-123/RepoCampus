@@ -26,16 +26,16 @@ function confirm(array, distance) {
             disreal.push(dis)
         }
 
-    }
-    console.log(disreal)
-    for (let i = 0; i < abcdario.length; i++) {
         if (array.indexOf(abcdario[i]) != -1) {
             if (disreal[i] === distance[i]) {
             } else {
                 bandera = false
             }
         }
+
     }
-    console.log(bandera)
+    console.log(disreal);
+
+    console.log(bandera);
 }
 confirm(s, distance);

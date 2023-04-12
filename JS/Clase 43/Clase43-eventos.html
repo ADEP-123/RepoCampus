@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo de eventos</title>
+  </head>
+  <body>
+    <h1 onclick="mostrarMensaje()">Ejemplos de eventos</h1>
+    <h2>Ejemplo de eventos2</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae facere,
+      voluptate explicabo accusamus eius nisi debitis enim qui, minus officia
+      quia suscipit neque harum recusandae? Ipsum fugit corrupti doloremque
+      ratione!
+    </p>
+
+    <script>
+      function mostrarMensaje() {
+        console.log("se ha presionado el Titulo");
+      }
+      const titulo2 = document.querySelector("h2");
+      //titulo2.onclick = mostrarMensaje
+      titulo2.addEventListener("click", mostrarMensaje);
+
+      const parrafo = document.querySelector("p");
+      let cont = 0;
+      parrafo.addEventListener("mouseover", () => {
+        parrafo.textContent = "Haz pasado " + ++cont + " veces";
+      });
+      parrafo.addEventListener("mouseout", () => {
+        parrafo.textContent =
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae facere, voluptate explicabo accusamus eius nisi debitis enim qui, minus officia quia suscipit neque harum recusandae? Ipsum fugit corrupti doloremque ratione!";
+      });
+    </script>
+  </body>
+</html>

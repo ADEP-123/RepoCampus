@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Instalacion-local/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/Prueba.css" />
+    <title>Prueba Salarios</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col" style="text-align: center">
+          <h1>REGISTRO NOMINA ACME</h1>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <table
+            class="table table-dark table-sm"
+            name="formulario"
+            id="formulario"
+          >
+            <thead>
+              <tr style="text-align: center">
+                <th>CEDULA</th>
+                <th>NOMBRE</th>
+                <th>CATEGORIA</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="cedula"
+                    id="cedula"
+                    class="form-control"
+                    aria-describedby="agregarcedula"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="nombre"
+                    id="nombre"
+                    class="form-control"
+                    aria-describedby="agregarnombre"
+                  />
+                </td>
+                <td>
+                  <select name="categoria" id="categoria">
+                    <option value="1" selected>Auxiliar A</option>
+                    <option value="2">Auxiliar B</option>
+                    <option value="3">Tecnico A</option>
+                    <option value="4">Tecnico B</option>
+                    <option value="5">Profesional A</option>
+                    <option value="6">Profesional B</option>
+                    <option value="7">Director A</option>
+                    <option value="8">Director B</option>
+                    <option value="9">Gerente Departamento</option>
+                    <option value="10">Gerente General</option>
+                  </select>
+                </td>
+              </tr>
+              <tr style="text-align: center">
+                <td>
+                  <input
+                    type="button"
+                    value="Agregar"
+                    name="agregar"
+                    id="agregar"
+                    onclick="agregar1();"
+                    class="btn btn-secondary form-control-lg"
+                  />
+                </td>
+                <td></td>
+                <td>
+                  <input
+                    type="button"
+                    value="Limpiar"
+                    name="limpiar"
+                    id="limpiar"
+                    onclick="limpiar1();"
+                    class="btn btn-secondary form-control-lg"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="table table-dark table-sm" name="formulario">
+            <thead>
+              <tr style="text-align: center">
+                <th>CEDULA</th>
+                <th>NOMBRE</th>
+                <th>CATEGORIA</th>
+                <th>SALARIO BRUTO</th>
+                <th>AUXILIO TX</th>
+                <th>BONIFICACIONES</th>
+                <th>EPS</th>
+                <th>PENSIÓN</th>
+                <th>SALARIO NETO</th>
+              </tr>
+            </thead>
+            <tbody id="info"></tbody>
+            <tbody>
+              <tr>
+                <td>Total:</td>
+                <td></td>
+                <td></td>
+                <td id="salarioBrutoTot1"></td>
+                <td id="auxTransporteTot1"></td>
+                <td id="bonificacionTot1"></td>
+                <td id="epsTot1"></td>
+                <td id="pensionTot1"></td>
+                <td id="salNetoTot1"></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="table table-dark table-sm" name="formulario">
+            <thead>
+              <tr style="text-align: center">
+                <th>CANT EMPLEADOS</th>
+                <th>EMPLEADOS MENOS GANA</th>
+                <th>PROM SALARIOS</th>
+                <th>EMPLEADO MAS GANA</th>
+                <th>VALOR TOTAL NOMINA</th>
+              </tr>
+            </thead>
+            <tbody id="estadisticas"></tbody>
+          </table>
+        </div>
+        <div class="col-10"></div>
+        <div class="col-2">
+          <input
+            type="button"
+            value="Limpiar Tablas"
+            name="limpiara"
+            id="limpiara"
+            onclick="limpiar2();"
+            class="btn btn-secondary form-control-lg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!--Js personal-->
+    <script src="js/Prueba.js"></script>
+
+    <!--La libreria de los frameworks se coloca al final del body-->
+    <script src="Instalacion-local/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

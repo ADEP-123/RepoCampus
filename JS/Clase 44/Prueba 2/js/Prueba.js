@@ -86,17 +86,13 @@ function calcularDatos() {
     }
     return vRes
 }
-//Totales
+
 let salarioBrutoTot = 0;
 let auxTransporteTot = 0;
 let bonificacionTot = 0;
 let epsTot = 0;
 let pensionTot = 0;
 let salNetoTot = 0;
-let vTot = [];
-vTot[0] = "Total:"; vTot[1] = ""; vTot[2] = ""; vTot[3] = salarioBrutoTot; vTot[4] = auxTransporteTot; vTot[5] = bonificacionTot; vTot[6] = epsTot; vTot[7] = pensionTot; vTot[8] = salNetoTot;
-
-//Tabla reporte
 let cantEmpl = 0;
 let menSal = Infinity;
 let nomMenSal = "";
@@ -105,26 +101,13 @@ let maySal = 0;
 let nomMaySal = "";
 
 
-
 function agregar1() {
-    const vRes = calcularDatos()
-    const info = document.getElementById("info");
-
-    const fragment = document.createDocumentFragment();
-    const tr = document.createElement("tr");
-    fragment.appendChild(tr);
-    const template = document.getElementById("infoTemplate").content;
-    vRes.forEach((element) => {
-        template.querySelector("td").textContent = element;
-        const clone = template.querySelector("td").cloneNode(true);
-        fragment.querySelector("tr").appendChild(clone);
-    });
-    info.appendChild(fragment);
-
-
+    let vRes = calcularDatos()
 
     document.getElementById("cedula").value = "";
     document.getElementById("nombre").value = "";
+
+
 
     document.getElementById("salarioBrutoTot1").innerHTML = `$${salarioBrutoTot.toLocaleString("es")}`
     document.getElementById("auxTransporteTot1").innerHTML = `$${auxTransporteTot.toLocaleString("es")}`
@@ -132,6 +115,21 @@ function agregar1() {
     document.getElementById("epsTot1").innerHTML = `$${epsTot.toLocaleString("es")}`
     document.getElementById("pensionTot1").innerHTML = `$${pensionTot.toLocaleString("es")}`
     document.getElementById("salNetoTot1").innerHTML = `$${salNetoTot.toLocaleString("es")}`
+
+    let str = String(document.getElementById("info").innerHTML);
+    str =
+        `<tr>
+  <td>${vRes[0]}</td>
+  <td>${vRes[1]}</td>
+  <td>${vRes[2]}</td>
+  <td>$${vRes[3].toLocaleString("es")}</td>
+  <td>$${vRes[4].toLocaleString("es")}</td>
+  <td>$${vRes[5].toLocaleString("es")}</td>
+  <td>$${vRes[6].toLocaleString("es")}</td>
+  <td>$${vRes[7].toLocaleString("es")}</td>
+  <td>$${vRes[8].toLocaleString("es")}</td>
+  </tr>` + str;
+    document.getElementById("info").innerHTML = str;
 
     document.getElementById("estadisticas").innerHTML =
         `<tr>

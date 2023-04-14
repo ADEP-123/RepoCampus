@@ -17,16 +17,21 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-6">
-          <!--Tabla ingreso de datos-->
+        <div class="col-12">
           <table
             class="table table-dark table-sm"
             name="formulario"
             id="formulario"
           >
             <thead>
-              <tr>
+              <tr style="text-align: center">
                 <th>CEDULA</th>
+                <th>NOMBRE</th>
+                <th>CATEGORIA</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
                 <td>
                   <input
                     type="number"
@@ -36,9 +41,6 @@
                     aria-describedby="agregarcedula"
                   />
                 </td>
-              </tr>
-              <tr>
-                <th>NOMBRE</th>
                 <td>
                   <input
                     type="text"
@@ -48,9 +50,6 @@
                     aria-describedby="agregarnombre"
                   />
                 </td>
-              </tr>
-              <tr>
-                <th>CATEGORIA</th>
                 <td>
                   <select name="categoria" id="categoria">
                     <option value="1" selected>Auxiliar A</option>
@@ -66,8 +65,6 @@
                   </select>
                 </td>
               </tr>
-            </thead>
-            <tbody>
               <tr style="text-align: center">
                 <td>
                   <input
@@ -79,6 +76,7 @@
                     class="btn btn-secondary form-control-lg"
                   />
                 </td>
+                <td></td>
                 <td>
                   <input
                     type="button"
@@ -92,10 +90,7 @@
               </tr>
             </tbody>
           </table>
-        </div>
 
-        <div class="col-12">
-          <!--Tabla datos generales-->
           <table class="table table-dark table-sm" name="formulario">
             <thead>
               <tr style="text-align: center">
@@ -110,13 +105,7 @@
                 <th>SALARIO NETO</th>
               </tr>
             </thead>
-            <tbody id="info">
-              <template id="infoTemplate">
-                <tr>
-                  <td></td>
-                </tr>
-              </template>
-            </tbody>
+            <tbody id="info"></tbody>
             <tbody>
               <tr>
                 <td>Total:</td>
@@ -131,7 +120,7 @@
               </tr>
             </tbody>
           </table>
-          <!--Tabla informe final-->
+
           <table class="table table-dark table-sm" name="formulario">
             <thead>
               <tr style="text-align: center">

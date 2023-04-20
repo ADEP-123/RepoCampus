@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            <table>
+                <h1>Registrar Factura</h1>
+                <tr>
+                    <th>Numero Factura</th>
+                    <td>
+                        <input type="number" readonly id="numeracion" value="1">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Valor Factura</th>
+                    <td>
+                        <input type="number" id="vFactura">
+                    </td>
+                </tr>
+            </table>
+            <button id="registrar">Registrar</button>
+        </div>
+        <div>
+            <table>
+                <h1>Pagar Factura</h1>
+                <tr>
+                    <th>Numero Factura</th>
+                    <td>
+                        <input type="number" id="numeracionP">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="pagarF">Pagar</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <h1>Facturas empresa ACME</h1>
+                <tr>
+                    <th>Numero Factura</th>
+                    <th>Valor Factura</th>
+                </tr>
+            </thead>
+            <tbody id="aqui">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="Ejercicio2SR.js"></script>
+</body>
+</html>

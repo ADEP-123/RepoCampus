@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+          <table class="table table-dark table-sm">
+            <thead>
+              <tr>
+                <td></td>
+                <td>
+                  <h1>Fill Elements</h1>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Purchase Price</td>
+                <td><input type="number" id="purPrice" /></td>
+              </tr>
+              <tr>
+                <td>Storage Quantity</td>
+                <td><input type="number" id="storQuant" /></td>
+              </tr>
+              <tr>
+                <td>Minimum Quantity</td>
+                <td><input type="number" id="minQuant" /></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <button id="fill">Fill</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="row" id="here"></div>
+
+      <template id="example">
+        <div class="card" style="width: 18rem; text-align: center">
+          <div class="card-body">
+            <h5 class="card-title" id="codHere"></h5>
+            <h6
+              class="card-subtitle mb-2 text-body-secondary"
+              id="precHere"
+            ></h6>
+            <p class="card-text" id="quantHere"></p>
+          </div>
+        </div>
+      </template>
+    </div>
+
+    <script src="Ej1Clase51.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

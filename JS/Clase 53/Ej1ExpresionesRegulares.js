@@ -11,3 +11,8 @@ let valido = telRe.exec("+576076363636");
 for (let exp of valido){
     console.log(exp)
 }
+
+//DETECTAR UNA PARTE DEL TEXTO EN ESPECIFICO
+const myRe1 = /abcd/g;
+let str1 = myRe1.exec("abcdefg")
+console.log(str1)

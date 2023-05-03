@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Ejemplo - localStorage</h1>
+    <div style="text-align: center">
+      <input type="text" id="nombre" placeholder="Nombre" />
+      <br /><br />
+      <input type="text" id="apellido" placeholder="Apellido" />
+      <br /><br />
+      <button id="guardar">Guardar</button>
+      <hr />
+      <label for="nomguard">Nombre almacenado:</label>
+      <input type="text" id="nomguard" readonly />
+      <br /><br />
+      <label for="apellguard">Apellido almacenado:</label>
+      <input type="text" id="apellguard" readonly />
+      <br />
+      <button id="extraer">Cargar Elementos</button>
+      <hr />
+    </div>
+    <script>
+      const save = document.getElementById("guardar");
+      save.addEventListener("click", (e) => {
+        e.preventDefault();
+        let Nombre1 = document.getElementById("nombre").value;
+        let Apellido1 = document.getElementById("apellido").value;
+        if (Nombre1 === "" || Apellido1 === "") {
+          alert("Ingrese los datos correctamente");
+        } else {
+          localStorage.Nombre = Nombre1;
+          localStorage.Apellido = Apellido1;
+          document.getElementById("nombre").value = "";
+          document.getElementById("apellido").value = "";
+        }
+      });
+
+      const show = document.getElementById("extraer");
+      show.addEventListener("click", (a) => {
+        a.preventDefault();
+        document.getElementById("nomguard").value = localStorage.Nombre;
+        document.getElementById("apellguard").value = localStorage.Apellido;
+      });
+    </script>
+  </body>
+</html>

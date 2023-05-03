@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Ejemplo - localStorage</h1>
+    <div style="text-align: center">
+      <input type="text" id="nombre" placeholder="Nombre" />
+      <br /><br />
+      <input type="text" id="apellido" placeholder="Apellido" />
+      <br /><br />
+      <button id="guardar">Guardar</button>
+      <hr />
+      <label for="nomguard" id="nomguard">Nombre almacenado:</label>
+      <br /><br />
+      <label for="here" id="apellguard">Apellido almacenado:</label>
+      <br />
+      <button id="extraer">Cargar Elementos</button>
+      <hr />
+    </div>
+    <script>
+      let vPersona = [];
+      const save = document.getElementById("guardar");
+      save.addEventListener("click", (e) => {
+        e.preventDefault();
+        let Nombre1 = document.getElementById("nombre").value;
+        let Apellido1 = document.getElementById("apellido").value;
+        if (
+          Nombre1 === "" ||
+          Apellido1 === "" ||
+          isNaN(Nombre1) === false ||
+          isNaN(Apellido1) === false
+        ) {
+          alert("Ingrese los datos correctamente");
+          document.getElementById("nombre").value = "";
+          document.getElementById("apellido").value = "";
+        } else {
+          let persona = {
+            Nombre: Nombre1,
+            Apellido: Apellido1,
+          };
+          vPersona.push(persona);
+          sessionStorage.vPersona = JSON.stringify(vPersona);
+          document.getElementById("nombre").value = "";
+          document.getElementById("apellido").value = "";
+        }
+      });
+
+      const show = document.getElementById("extraer");
+      show.addEventListener("click", (a) => {
+        a.preventDefault();
+        v2Persona = JSON.parse(sessionStorage.vPersona);
+        let nombres = "";
+        let apellidos = "";
+        for (i = 0; i < v2Persona.length; i++) {
+          nombres += ` ${v2Persona[i].Nombre},`;
+          apellidos += ` ${v2Persona[i].Apellido},`;
+        }
+        document.getElementById(
+          "nomguard"
+        ).textContent = `Nombres almacenados: ${nombres}`;
+        document.getElementById(
+          "apellguard"
+        ).textContent = `Apellidos almacenados: ${apellidos}`;
+      });
+    </script>
+  </body>
+</html>

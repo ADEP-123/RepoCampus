@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row text-center">
+        <h1>Inventario ACME</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <form class="bg-dark text-white">
+            <fieldset class="pe-2 ps-2">
+              <legend>Datos Prenda</legend>
+
+              <div class="row">
+                <div class="col-5">
+                  <label for="codigo" class="form-label">Codigo:</label>
+                </div>
+
+                <div class="col-7">
+                  <input
+                    type="text"
+                    name="codigo"
+                    id="codigo"
+                    class="form-control ms-0"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-5">
+                  <label for="descripcion" class="form-label"
+                    >Descripción:</label
+                  >
+                </div>
+
+                <div class="col-7">
+                  <input
+                    type="text"
+                    name="descripcion"
+                    id="descripcion"
+                    class="form-control ms-0"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-5">
+                  <label for="precioCompra" class="form-label"
+                    >Precio Compra:</label
+                  >
+                </div>
+
+                <div class="col-7">
+                  <input
+                    type="number"
+                    name="precioCompra"
+                    id="precioCompra"
+                    class="form-control ms-0"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-5">
+                  <label for="precioVenta" class="form-label"
+                    >Precio Venta:</label
+                  >
+                </div>
+
+                <div class="col-7">
+                  <input
+                    type="number"
+                    name="precioVenta"
+                    id="precioVenta"
+                    class="form-control ms-0"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-5">
+                  <label for="cantBodega" class="form-label"
+                    >Cantidad en Bodega:</label
+                  >
+                </div>
+
+                <div class="col-7">
+                  <input
+                    type="number"
+                    name="cantBodega"
+                    id="cantBodega"
+                    class="form-control ms-0"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-5">
+                  <label for="cantMinBodega" class="form-label"
+                    >Cantidad Minima en Bodega:</label
+                  >
+                </div>
+
+                <div class="col-7">
+                  <input
+                    type="number"
+                    name="cantMinBodega"
+                    id="cantMinBodega"
+                    class="form-control ms-0"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-5">
+                  <label for="cantMaxInv" class="form-label"
+                    >Cantidad Maxima de Inventario</label
+                  >
+                </div>
+
+                <div class="col-7">
+                  <input
+                    type="number"
+                    name="cantMaxInv"
+                    id="cantMaxInv"
+                    class="form-control ms-0"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-5">
+                  <label for="porcDesc" class="form-label"
+                    >Porcentaje de descuento:</label
+                  >
+                </div>
+
+                <div class="col-7">
+                  <input
+                    type="number"
+                    name="porcDesc"
+                    id="porcDesc"
+                    class="form-control ms-0"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-5">
+                  <label for="tipo" class="form-label">Tipo</label>
+                </div>
+
+                <div class="col-7">
+                  <select name="tipo" id="tipo" class="form-select ms-0">
+                    <option value="1">Prendas de Vestir</option>
+                    <option value="2">Calzado</option>
+                  </select>
+                </div>
+              </div>
+
+              <div id="adicional" class="row">
+                <div class="col-5">
+                  <label for="talla" class="form-label"> Talla </label>
+                </div>
+
+                <div class="col-7">
+                  <select name="talla" id="talla" class="form-select ms-0">
+                    <option value="1">S</option>
+                    <option value="2">M</option>
+                    <option value="3">L</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-5">
+                  <label for="permPlan" class="form-label">
+                    Permite Planchado
+                  </label>
+                </div>
+
+                <div class="col-7">
+                  <select
+                    name="permPlan"
+                    id="permPlan"
+                    class="form-select ms-0"
+                  >
+                    <option value="1">Si</option>
+                    <option value="2">No</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-12 d-flex justify-content-end">
+                  <input
+                    type="submit"
+                    value="Agregar"
+                    id="btnAgregar"
+                    class="btn btn-primary"
+                  />
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="col-6">
+          <table class="bg-dark text-white">
+            <tbody>
+              <tr>
+                <th>Cantidad Productos Ingresados</th>
+                <td id="cantProd"></td>
+              </tr>
+              <tr>
+                <th>Cantidad Prendas de Vestir Ingresadas</th>
+                <td id="cantPrend"></td>
+              </tr>
+              <tr>
+                <th>Cantidad Productos Que Requieren ser pedidos</th>
+                <td id="cantProdReq"></td>
+              </tr>
+              <tr>
+                <th>Calzado con mayor cantidad en bodega</th>
+              </tr>
+              <tr>
+                <td id="calMayCantCod"></td>
+                <td id="calMayCantDescr"></td>
+              </tr>
+            </tbody>
+          </table>
+          <br />
+          <table class="bg-dark text-white">
+            <thead>
+              <tr style="text-align: center">
+                <th>Producto con mayor % de ganancia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Codigo:</th>
+                <td id="mayPorCod"></td>
+              </tr>
+              <tr>
+                <th>Descripcion:</th>
+                <td id="mayPorDesc"></td>
+              </tr>
+              <tr>
+                <th>Valor de Compra</th>
+                <td id="mayPorComp"></td>
+              </tr>
+              <tr>
+                <th>Valor de Ventas:</th>
+                <td id="mayPorVentas"></td>
+              </tr>
+              <tr>
+                <th>% Ganancia</th>
+                <td id="mayPorPor"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!--Formulario-->
+      <div class="row" id="here"></div>
+      <template id="temp3">
+        <div class="card" style="width: 18rem; text-align: center">
+          <div class="card-body">
+            <h5 class="card-title" id="codHere"></h5>
+            <h6
+              class="card-subtitle mb-2 text-body-secondary"
+              id="tipoHere"
+            ></h6>
+            <p class="card-text" id="cantHere"></p>
+            <p class="card-text" id="precHere"></p>
+            <p class="card-text" id="decrpHere"></p>
+          </div>
+        </div>
+      </template>
+    </div>
+    <!--Container-->
+    <!--Js Propio-->
+    <script src="Prueba.js"></script>
+    <!--Bootrstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

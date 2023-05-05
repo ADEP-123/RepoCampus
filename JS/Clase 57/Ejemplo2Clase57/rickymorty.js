@@ -22,6 +22,12 @@ function getCharacters() {
     .then((data) => {
       //console.log(data);
       buildTarjeta(data);
-    });
+    })
+    .catch((err) => {
+      console.log("Error al consumir la API\n", err.message)
+    })
+    .finally(()=>{
+      console.log("Se ha consumido toda el API")
+    })
 }
 getCharacters();

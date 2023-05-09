@@ -1,0 +1,27 @@
+{
+  "persona": [
+    {
+      "id": 1098817776,
+      "nombre": "Andres Elizalde",
+      "carro": "V48A"
+    },
+    {
+      "id": 1234,
+      "nombre": "paco",
+      "carro": "twingo"
+    }
+  ],
+  "carro": [
+
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

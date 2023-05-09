@@ -3,6 +3,7 @@
 //2. npm init enter a todoooo luego yes
 //3. json-server --watch db.json
 //4. en el package cambiar "script" por "server": "json-server -w db.json -p 4001"
+//5. npm run server
 //abrir api en nav http://localhost:4001
 
 class Persona {

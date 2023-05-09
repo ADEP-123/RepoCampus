@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pagina.css" />
+    <link rel="stylesheet" href="carritodeCompra.css" />
+    <script src="pagina.js" defer type="module"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="header">
+      <div id="hs1">
+        <h1>Tienda Elizalde</h1>
+      </div>
+      <div id="hs2">
+        <nav id="nav">
+          <button id="home">Home</button>
+          <button id="electronics">Electronics</button>
+          <button id="jewelery">Jewelery</button>
+          <button id="manClothing">Men's Clothing</button>
+          <button id="womanClothing">Women's Clothing</button>
+        </nav>
+
+        <button id="shbag">
+          <img src="/JS/Clase 59/PaginaPractica/imgs/shcar.png" />
+        </button>
+
+        <!-- Ventana modal, por defecto no visiblel -->
+        <div id="ventanaModal" class="modal">
+          <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <div id="contCarrComp">
+                <article class="tarjeta" id="resumencarrito">
+                </article>
+                
+            </div>
+            <div>
+                <button id="pagar">Pagar</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="contenido"></div>
+  </body>
+</html>

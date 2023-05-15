@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Header*/
+#header{
+    height: 10vh;
+    background-color: rgb(31, 28, 28);
+    display: flex;
+}
+#logo{
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 15%;
+}
+#youtube{
+    height: 60%;
+}
+#headbusc{
+   display: flex;
+   width: 80%;
+   
+}
+#search{
+    width: 90%;
+}
+.search{
+    margin-top: 1%;
+    height: 60%;
+}
+/*Content*/
+#content{
+    height: 90vh;
+    display: flex;
+}
+/*Panel Izquierdo*/
+#contleft{
+    width: 70%;
+    height: 100%;
+    background-color: aquamarine;
+}
+#video{
+    height: 66%;
+    background-color: red;
+    padding: 2%  ;
+}
+#tituloVideo{
+    height: 4%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: pink;
+}
+#relvid{
+    height: 30%;
+padding: 2%;
+}
+
+/*Panel dERECHO*/
+#contrigth{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(255, 153, 127);
+}
+#canInfo{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 5%;
+    background-color: blueviolet;
+}

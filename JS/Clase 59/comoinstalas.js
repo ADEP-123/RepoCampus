@@ -48,5 +48,5 @@ function AgregarPersona(a, b, c) {
     headers: {
       "Content-type": "application/json",
     },
-  }).then((res) => console.log(res));
+  }).then((res) => console.log(res)); 
 }

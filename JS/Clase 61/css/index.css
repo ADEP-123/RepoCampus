@@ -69,7 +69,7 @@
     
 }
 #relvid{
-    height: 28%;
+    height: 27%;
     display: flex;
 }
 .rltdvideo{
@@ -100,12 +100,14 @@
     max-height: 70%;
     height: 70%;
     overflow-y: auto;
+    font-size: larger;
 }
 
 #videscr{
     margin: 1%;
     height: 22%;
     overflow-y: auto;
+    font-size: larger;
 }
 
 #avatarCreat{

@@ -98,7 +98,7 @@ async function coments(idVid) {
 
 function creatComents(comentarios) {
   let str = "";
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 29; i++) {
     str += ` <p><b>${comentarios.comments[i].author.title}</b>:${comentarios.comments[i].content}</p></br> `;
   }
   document.getElementById("comts").innerHTML = str;

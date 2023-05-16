@@ -99,12 +99,13 @@
     margin-right: 1%;
     max-height: 70%;
     height: 70%;
+    overflow-y: auto;
 }
 
 #videscr{
     margin: 1%;
     height: 22%;
-    
+    overflow-y: auto;
 }
 
 #avatarCreat{

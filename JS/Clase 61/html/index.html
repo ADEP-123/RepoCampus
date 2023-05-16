@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/index.css" />
+    <script src="../js/index.js" defer></script>
     <title>Youtuve_Chiviao</title>
   </head>
   <body>
@@ -12,24 +13,30 @@
       <div id="logo"><img src="../images/youtube_logo.png" id="youtube" /></div>
       <div id="headbusc">
         <input type="text" id="search" placeholder="Buscador" class="search" />
-        <button class="search"><img src="../images/search.png" /></button>
+        <button class="search" id="start"><img src="../images/search.png" /></button>
       </div>
     </div>
 
     <div id="content">
       <div id="contleft">
-        <div id="video"></div>
-        <div id="tituloVideo"></div>
-        <div id="relvid"></div>
+        <div id="video"> <iframe id="videoDif" width="560" height="315" src="https://www.youtube.com/embed/lTRiuFIWV54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen preload> </iframe></div>
+        <div id="tituloVideo"><h1>lofi hip hop radio 📚 - beats to relax/study to</h1></div>
+        <div id="relvid">
+          <div class="rltdvideo"></div>
+          <div class="rltdvideo"></div>
+          <div class="rltdvideo"></div>
+        </div>
       </div>
       <div id="contrigth">
         <div id="canInfo">
-          <div></div>
+          <div id="avatarCreat"></div>
           <div></div>
         </div>
-        <div></div>
-        <div></div>
+        <div id="comts"></div>
+        <div id="videscr"></div>
       </div>
+
+      
     </div>
   </body>
 </html>

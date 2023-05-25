@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+#cuerpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#tabingreso{
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+#tabres{
+    margin-bottom: 2%;
+    text-align: center;
+}
+#tabingreso table{
+    width: 100%;
+}
+th , tr , td {
+    border: 1px solid black;
+}
+
+th{
+    background-color: rgb(146, 121, 8);
+    color: white;
+    
+}
+td{
+    background-color: rgb(161, 142, 57);
+}
+
+input , select, button{
+    background-color: rgb(230, 208, 113);
+    color: #000;
+}
+

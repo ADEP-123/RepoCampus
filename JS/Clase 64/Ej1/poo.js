@@ -120,7 +120,7 @@ selector.addEventListener("click", (e) => {
               <td>${persona1.getNombre}</td>
               <td>${persona1.getEdad}</td>
               <td>${persona1.getsexo}</td>
-              <td></td>
+              <td>-</td>
               <td>${Persona.esMayorDeEdad(persona1.getEdad)}</td>
             </tr>
           `;

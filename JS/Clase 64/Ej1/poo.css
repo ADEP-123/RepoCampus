@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+#cuerpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#tabingreso{
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+#tabres{
+    margin-bottom: 2%;
+    text-align: center;
+}
+#tabingreso table{
+    width: 100%;
+}

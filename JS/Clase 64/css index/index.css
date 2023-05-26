@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#cuerpo{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tarj1, #tarj2, #tarj3, #tarj4, #tarj5{
+    width: 15%;
+    height: 30%;
+    border: 1px solid black;
+    margin: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    box-shadow: 1px 10px 10px black;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size:xx-large;
+}
+#tarj1{
+    background: linear-gradient(0deg, rgba(78,8,99,1) 0%, rgba(200,155,221,1) 100%);
+}
+#tarj2{
+    background: linear-gradient(0deg, rgba(131,37,25,1) 0%, rgba(229,166,158,1) 100%);
+}
+#tarj3{
+    background: linear-gradient(0deg, rgba(8,146,49,1) 0%, rgba(106,235,144,1) 100%);
+}
+#tarj4{
+    background: linear-gradient(0deg, rgba(146,121,8,1) 0%, rgba(230,208,113,1) 100%);
+}
+#tarj5{
+    background: linear-gradient(0deg, rgba(29, 8, 146) 0%, rgba(209, 202, 252) 100%);
+}
+a:hover{
+    filter: saturate(180%)
+}

@@ -41,6 +41,7 @@ body{
     margin-top: 0%;
 }
 
+
 #tabingreso{
     width: 80%;
     margin-top: 2%;
@@ -59,16 +60,18 @@ th , tr , td {
 }
 
 th{
-    background-color: rgb(8, 146, 49);
+    background-color: rgb(29, 8, 146);
     color: white;
     
 }
 td{
-    background-color: rgb(15, 212, 74);
+    background-color: rgb(79, 60, 187);
 }
 
 input , select, button{
-    background-color: rgb(106, 235, 144);
+    background-color: rgb(209, 202, 252);
     color: #000;
 }
-
+button{
+    padding: 3px;
+}
